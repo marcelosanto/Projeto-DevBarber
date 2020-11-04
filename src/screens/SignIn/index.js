@@ -11,9 +11,11 @@ import {
   SignMessageButtonTextBold,
 } from './styles'
 
-import BarbeLogo from '../../assets/barber.svg'
-
 import Signinput from '../../components/Signinput'
+
+import BarbeLogo from '../../assets/barber.svg'
+import EmailIcon from '../../assets/email.svg'
+import LockIcon from '../../assets/lock.svg'
 
 export default () => {
   return (
@@ -21,9 +23,9 @@ export default () => {
       <BarbeLogo width="100%" height="160" />
 
       <InputArea>
-        <Signinput />
+        <Signinput IconSvg={EmailIcon} placeholder="Digite seu e-mail" />
 
-        <Signinput />
+        <Signinput IconSvg={LockIcon} placeholder="Digite sua senha" />
 
         <CustomButton>
           <CustomButtonText>LOGIN</CustomButtonText>
